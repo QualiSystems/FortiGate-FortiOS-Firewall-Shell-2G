@@ -1,6 +1,6 @@
 ![](https://github.com/QualiSystems/cloudshell-shells-documentaion-templates/blob/master/cloudshell_logo.png)
 
-# **FortiGateFortiOSFirewallShell2G**
+# **FortiGate FortiOS Firewall 2G Shell**
 
 Release date: October 2018
 
@@ -25,32 +25,32 @@ A shell integrates a device model, application or other technology with CloudShe
 ### Firewall Shells
 CloudShell's Firewall shells enable you to manage your Firewall device similar to your networking equipment but without connectivity. In CloudShell, a Firewall shell runs commands, such as Autoload, Load, and Save Configuration. 
 
-### **FortiGate FortiOS Firewall Shell 2G**
-**FortiGate FortiOS Firewall Shell 2G** provides you with connectivity and management capabilities such as device structure discovery and power management for the **FortiGate**. 
+### **FortiGate FortiOS Firewall 2G Shell**
+**FortiGate FortiOS Firewall 2G Shell** provides you with connectivity and management capabilities such as device structure discovery and power management for the **FortiGate FortiOS Firewall**. 
 
-For more information on the **FortiGate**, see the official **FortiNet** product documentation.
+For more information on the **FortiGate* FortiiOS Firewall**, see the official **FortiNet** product documentation.
 
 ### Standard version
-**FortiGate FortiOS Firewall Shell 2G 1.0.0** is based on the **Cloudshell Firewall Standard 3.0.1**.
+The **FortiGate FortiOS Firewall 2G Shell 1.0.0** is based on the **Cloudshell Firewall Standard 3.0.1**.
 
-For detailed information about the shell’s structure and attributes, see the **firewall_standard**.(https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/firewall_standard.md) in GitHub.
+For detailed information about the shell’s structure and attributes, see the **Firewall Shell Standard**.(https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/firewall_standard.md) in GitHub.
 
 ### Supported OS
 ▪ **FortiOS**
 
 ### Requirements
 
-Release: **FortiGate FortiOS Firewall Shell 2G**
+Release: **FortiGate FortiOS Firewall 2G Shell**
 
-* CloudShell version > 8.3
+* CloudShell version: 8.3 and above
 
 ### Data Model
 
 The shell's data model includes all shell metadata, families, and attributes.
 
-#### **FortiGate Families and Models**
+#### **FortiGate FortiOS Firewall 2G Shell Families and Models**
 
-The FortiGate families and models are listed in the following table:
+The families and models are listed in the following table:
 
 |Family|Model|Description|
 |:---|:---|:---|
@@ -60,7 +60,7 @@ The FortiGate families and models are listed in the following table:
 |CS_Port_Channel|Generic Port Channel|Group of interfaces|
 |CS_Power_Port|Generic Power Port|Power Supply module|
 
-#### **FortiGate Attributes**
+#### **FortiGate FortiOS Firewall 2G Shell Attributes**
 
 The attribute names and types are listed in the following table:
 
@@ -117,7 +117,7 @@ This section describes the automation (drivers) associated with the data model. 
 
 |Command|Description|
 |:-----|:-----|
-|Autoload|Discovers the device, it's hierarchy and attributes|
+|Autoload|Discovers the device, it's hierarchy and attributes.|
 |Send Custom Command|Sends command to the device, and prints output. All commands will be executed in the enable mode, However it will not allow to enter configuration mode.|
 |Send Custom Config Command|Sends command to the device in configuration mode, and prints output. All commands will be executed in the enable mode, accessible only via the API.|
 |Load Firmware|Uploads and updates firmware|
@@ -125,7 +125,7 @@ This section describes the automation (drivers) associated with the data model. 
 |Restore|Restores running or startup configurations from file|
 	
 # Downloading the Shell
-The **FortiGate FortiOS Firewall Shell 2G** is available from the [Quali Community Integrations](https://community.quali.com/integrations) page. 
+The **FortiGate FortiOS Firewall 2G Shell** is available from the [Quali Community Integrations](https://community.quali.com/integrations) page. 
 
 Download the files into a temporary location on your local machine. 
 
@@ -137,7 +137,7 @@ The shell comprises:
 |cloudshell-firewall-fortinet-fortios-shell-2g-dependencies-package-1.0.0.zip|Shell Python dependencies (for offline deployments only)|
 
 # Importing and Configuring the Shell
-This section describes how to import the **FortiGate FortiOS Firewall Shell 2G 1.0.0** and configure and modify the shell’s devices.
+This section describes how to import the **FortiGate FortiOS Firewall 2G Shell 2G 1.0.0** and configure and modify the shell’s devices.
 
 ### Importing the shell into CloudShell
 
@@ -156,13 +156,7 @@ The shell is displayed in the **Shells** page and can be used by domain administ
 
 **Note:** Offline installation instructions are relevant only if CloudShell Execution Server has no access to PyPi. You can skip this section if your execution server has access to PyPi. For additional information, see the online help topic on offline dependencies.
 
-In offline mode, import the shell into CloudShell and place any dependencies in the appropriate dependencies folder. The dependencies folder may differ, depending on the CloudShell version you are using:
-
-* For CloudShell version 8.3 and above, see [Adding Shell and script packages to the local PyPi Server repository](#adding-shell-and-script-packages-to-the-local-pypi-server-repository).
-
-* For CloudShell version 8.2, perform the appropriate procedure: [Adding Shell and script packages to the local PyPi Server repository](#adding-shell-and-script-packages-to-the-local-pypi-server-repository) or [Setting the python pythonOfflineRepositoryPath configuration key](#setting-the-python-pythonofflinerepositorypath-configuration-key).
-
-* For CloudShell versions prior to 8.2, see [Setting the python pythonOfflineRepositoryPath configuration key](#setting-the-python-pythonofflinerepositorypath-configuration-key).
+In offline mode, import the shell into CloudShell and place any dependencies in the appropriate dependencies folder. 
 
 ### Adding shell and script packages to the local PyPi Server repository
 If your Quali Server and/or execution servers work offline, you will need to copy all required Python packages, including the out-of-the-box ones, to the PyPi Server's repository on the Quali Server computer (by default *C:\Program Files (x86)\QualiSystems\CloudShell\Server\Config\Pypi Server Repository*).
@@ -180,24 +174,6 @@ For more information, see [Configuring CloudShell to Execute Python Commands in 
 
 3. Place these zip files in the local PyPi Server repository.
  
-### Setting the python PythonOfflineRepositoryPath configuration key
-Before PyPi Server was introduced as CloudShell’s python package management mechanism, the `PythonOfflineRepositoryPath` key was used to set the default offline package repository on the Quali Server machine, and could be used on specific Execution Server machines to set a different folder. 
-
-**To set the offline python repository:**
-1. Download the *cloudshell-firewall-fortinet-fortios-shell-2g-dependencies-package-1.0.0.zip* file, see [Downloading the Shell](#downloading-the-shell).
-
-2. Unzip it to a local repository. Make sure the execution server has access to this folder. 
-
-3.  On the Quali Server machine, in the *~\CloudShell\Server\customer.config* file, add the following key to specify the path to the default python package folder (for all Execution Servers):  
-	`<add key="PythonOfflineRepositoryPath" value="repository 
-full path"/>`
-
-4. If you want to override the default folder for a specific Execution Server, on the Execution Server machine, in the *~TestShell\Execution Server\customer.config* file, add the following key:  
-	`<add key="PythonOfflineRepositoryPath" value="repository 
-full path"/>`
-
-5. Restart the Execution Server.
- 
 ### Configuring a new resource
 This section explains how to create a new resource from the shell.
 
@@ -211,11 +187,11 @@ You can also modify existing resources, see [Managing Resources in the Inventory
      
   2. From the list, select **FortiGateFortiOSFirewallShell2G**.
   
-  3. Enter the **Name** and **IP address** of the **FortiGate** (if applicable).
+  3. Enter the **Name** and **IP address** of the **FortiGate FortiiOS Firewall**.
   
   4. Click **Create**.
   
-  5. In the **Resource** dialog box, enter the device's settings, see [Device Name Attributes](*device-name-attributes).
+  5. In the **Resource** dialog box, enter the device's settings, see [FortiGate FortiOS Firewall 2G Shell Attributes](*fortigate_fortios-firewall-2g-shell-attributes).
   
   6. Click **Continue**.
 
@@ -239,7 +215,6 @@ In online mode, the execution server automatically downloads and extracts the ap
 * If there is a live instance of the shell's driver or script, restart the execution server, as explained above. If an instance does not exist, the execution server will download the Python dependencies the next time a command of the driver or script runs.
 
 # Typical Workflows 
-(edit as necessary depending on the shell)
 
 **Workflow 1 - _Save configuration_** 
 1. In CloudShell Portal, add the device resource to an active sandbox.
@@ -271,10 +246,10 @@ The configuration is saved to a file named *<ResourceName><startup/running-confi
 **Workflow 4 - _Send custom command_**
 1. In CloudShell Portal, reserve the device resource.
 
-2. Run the **Send custom command** resource command.
+2. Run the **Send Custom Command** resource command.
 
 3. Enter the following parameters:
-    * **Command** (mandatory): Enter the command you want to run
+    * **Command** (mandatory): Enter the command you want to run.
 
 # References
 To download and share integrations, see [Quali Community's Integrations](https://community.quali.com/integrations). 
@@ -288,4 +263,4 @@ To connect with Quali users and experts from around the world, ask questions and
 # Release Notes 
 
 ### Known Issues
-* Firewall standard doesn't support SNMP v3 Authentication and Privacy Protocols
+* Firewall standard doesn't support SNMP v3 authentication and privacy protocols.
