@@ -31,7 +31,7 @@ CloudShell's Firewall shells enable you to manage your Firewall device similar t
 For more information on the **FortiGate FortiOS Firewall**, see the official **FortiNet** product documentation.
 
 ### Standard version
-The **FortiGate FortiOS Firewall 2G Shell 1.0.0** is based on the **Cloudshell Firewall Standard 3.0.1**.
+The **FortiGate FortiOS Firewall 2G Shell 1.0.0** is based on the **CloudShell Firewall Standard 3.0.1**.
 
 For detailed information about the shell’s structure and attributes, see the [**Firewall Shell Standard**](https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/firewall_standard.md) in GitHub.
 
