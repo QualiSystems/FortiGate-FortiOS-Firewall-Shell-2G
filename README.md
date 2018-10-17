@@ -28,7 +28,7 @@ CloudShell's Firewall shells enable you to manage your Firewall device similar t
 ### **FortiGate FortiOS Firewall 2G Shell**
 **FortiGate FortiOS Firewall 2G Shell** provides you with connectivity and management capabilities such as device structure discovery and power management for the **FortiGate FortiOS Firewall**. 
 
-For more information on the **FortiGate* FortiiOS Firewall**, see the official **FortiNet** product documentation.
+For more information on the **FortiGate FortiOS Firewall**, see the official **FortiNet** product documentation.
 
 ### Standard version
 The **FortiGate FortiOS Firewall 2G Shell 1.0.0** is based on the **Cloudshell Firewall Standard 3.0.1**.
@@ -187,11 +187,11 @@ You can also modify existing resources, see [Managing Resources in the Inventory
      
   2. From the list, select **FortiGateFortiOSFirewallShell2G**.
   
-  3. Enter the **Name** and **IP address** of the **FortiGate FortiiOS Firewall**.
+  3. Enter the **Name** and **IP address** of the **FortiGate FortiOS Firewall**.
   
   4. Click **Create**.
   
-  5. In the **Resource** dialog box, enter the device's settings, see [FortiGate FortiOS Firewall 2G Shell Attributes](*fortigate_fortios-firewall-2g-shell-attributes).
+  5. In the **Resource** dialog box, enter the device's settings, see [FortiGate FortiOS Firewall 2G Shell Attributes](*fortigate-fortios-firewall-2g-shell-attributes).
   
   6. Click **Continue**.
 
