@@ -33,7 +33,7 @@ For more information on the **FortiGate FortiOS Firewall**, see the official **F
 ### Standard version
 The **FortiGate FortiOS Firewall 2G Shell 1.0.0** is based on the **Cloudshell Firewall Standard 3.0.1**.
 
-For detailed information about the shell’s structure and attributes, see the **Firewall Shell Standard**.(https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/firewall_standard.md) in GitHub.
+For detailed information about the shell’s structure and attributes, see the [**Firewall Shell Standard**](https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/firewall_standard.md) in GitHub.
 
 ### Supported OS
 ▪ **FortiOS**
