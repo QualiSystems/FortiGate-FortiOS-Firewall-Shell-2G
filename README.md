@@ -62,67 +62,11 @@ The families and models are listed in the following table:
 
 #### **FortiGate FortiOS Firewall 2G Shell Attributes**
 
-The attribute names and types are listed in the following table:
-
-|Attribute|Type|Default value|Description|
-|:---|:---|:---|:---|
-|User|String| |Username for CLI (should be privileged user)|
-|Password|Password| |Password for CLI|
-|Enable Password|Password| |Enable password for CLI|
-|Session Concurrency Limit|Numeric|1|Number of sessions that can be opened to the device. Defines the number of commands that can run concurrently|
-|System Name|String| |Device hostname|
-|Contact Name|String| |Device contact name|
-|OS Version|String| |Operation system version|
-|Vendor|String| |Device manufacturer|
-|Location|String| |Device Location|
-|Model|String| |The device model. This information is typically used for abstract resource filtering|
-|Enable SNMP|Boolean|True|If set to True and SNMP isn’t enabled yet in the device the Shell will automatically enable SNMP in the device when Autoload command is called, using the SNMP Write or Read Community value. If Value is empty, relevant error will be raised. SNMP must be enabled on the device for the Autoload command to run successfully.|
-|Disable SNMP|Boolean|False|If set to True SNMP will be disabled automatically by the Shell after the Autoload command execution is completed.|
-|SNMP Read Community|Password| |Read Only SNMP community, used for Autoload functionality|
-|SNMP Write Community|Password| |Read Write SNMP community|
-|SNMP V3 User|String| |Snmp version 3 user name
-|SNMP V3 Password|Password| |SNMP version 3 password|
-|SNMP V3 Private Key|String| |SNMP version 3 private key|
-|SNMP Version|String|v2c|Specifies version of SNMP, Autoload will use to load attributes|
-|Console Server IP Address|String| |Shell allows to connect to the device through Console server. IP Address of Console server|
-|Console User|String| |User name for the Console server|
-|Console Password|Password| |Password for Console server|
-|Console Port|Numeric| |Port for the Console server|
-|CLI Connection Type|Lookup|Auto|The protocol which the Shell will use to connect to the Device. Available methods: Auto, Console, SSH, Telnet, TCP|
-|CLI TCP Port|Numeric| |TCP Port to user for CLI connection. If kept empty a default CLI port will be used based on the chosen protocol, for example Telnet will use port 23.|
-|Power Management|Boolean|False|Used by the power management service|
-|Backup Type|String|File System|Supported protocols for saving and restoring of configuration and firmware files. Possible values are "File System", "FTP" and "TFTP".|
-|Backup Location|String| |Default Location, where files will be saved by Save method|
-|Backup User|String| |Username for the storage server used for saving and restoring of configuration and firmware files.|
-|Backup Password|Password| |Password for the storage server used for saving and restoring of configuration and firmware files.|
-|VRF Management Name|String| |The default VRF Management to use if configured in the network and no such input was passed to the Save, Restore or Load Firmware commands|
-|Model|String| |Element model (Module or Chassis, etc.)|
-|Serial Number|String| |Element serial number (Module or Chassis, etc.)|
-|Version|String| |Element version (Module or Chassis, etc.)|
-|Mac Address|String| |Interface mac address|
-|L2 Protocol Type|String| |Interface protocol type|
-|IPv4 Address|String| |Interface IPv4 address|
-|IPv6 Address|String| |Interface IPv6 address|
-|Port Description|String| |Interface description|
-|Bandwidth|Numeric|0|Interface speed|
-|MTU|Numeric|0|Interface mtu|
-|Duplex|Lookup|Half|Interface duplex (half or full)|
-|Adjacent|String| |If lldp is enabled on port, Adjacent shows connected device name and interface|
-|Protocol Type|Lookup|Transparent|Attribute for internal usage|
-|Auto Negotiation|Boolean|False|Shows if Auto negotiation is enabled on the interface|
-|Associated Ports|String| |Interfaces added to certain Port-channel|
+The attribute names and types are listed in the [**Firewall Standard Attributes**](https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/firewall_standard.md#attributes)
 
 ### Automation
 This section describes the automation (drivers) associated with the data model. The shell’s driver is provided as part of the shell package. There are two types of automation processes, Autoload and Resource. Autoload is executed when creating the resource in the Inventory dashboard, while resource commands are run in the Sandbox, providing that the resource has been discovered and is online.
-
-|Command|Description|
-|:-----|:-----|
-|Autoload|Discovers the device, it's hierarchy and attributes.|
-|Send Custom Command|Sends command to the device, and prints output. All commands will be executed in the enable mode, However it will not allow to enter configuration mode.|
-|Send Custom Config Command|Sends command to the device in configuration mode, and prints output. All commands will be executed in the enable mode, accessible only via the API.|
-|Load Firmware|Uploads and updates firmware|
-|Save|Backs up running or startup configuration of the device|
-|Restore|Restores running or startup configurations from file|
+FortiGate FortiOS Firewall support commands from the [**Firewall Standard Commands**](https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/firewall_standard.md#commands)
 	
 # Downloading the Shell
 The **FortiGate FortiOS Firewall 2G Shell** is available from the [Quali Community Integrations](https://community.quali.com/integrations) page. 
