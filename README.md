@@ -62,11 +62,12 @@ The families and models are listed in the following table:
 
 #### **FortiGate FortiOS Firewall 2G Shell Attributes**
 
-The attribute names and types are listed in the [**Firewall Standard Attributes**](https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/firewall_standard.md#attributes)
+The attribute names and types are listed in the [**Firewall Shell Standard**](https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/firewall_standard.md#attributes) - **Attributes** section.
 
 ### Automation
 This section describes the automation (drivers) associated with the data model. The shell’s driver is provided as part of the shell package. There are two types of automation processes, Autoload and Resource. Autoload is executed when creating the resource in the Inventory dashboard, while resource commands are run in the Sandbox, providing that the resource has been discovered and is online.
-FortiGate FortiOS Firewall support commands from the [**Firewall Standard Commands**](https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/firewall_standard.md#commands)
+
+The FortiGate FortiOS Firewall shell supports commands listed in the [**Firewall Shell Standard**](https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/firewall_standard.md#commands) - **Commands** section.
 	
 # Downloading the Shell
 The **FortiGate FortiOS Firewall 2G Shell** is available from the [Quali Community Integrations](https://community.quali.com/integrations) page. 
