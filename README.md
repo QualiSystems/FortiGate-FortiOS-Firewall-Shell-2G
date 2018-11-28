@@ -44,6 +44,8 @@ Release: **FortiGate FortiOS Firewall 2G Shell**
 
 * CloudShell version: 8.3 and above
 
+**Note:** If your CloudShell version does not support this shell, you should consider upgrading to a later version of CloudShell or contact customer support.
+
 ### Data Model
 
 The shell's data model includes all shell metadata, families, and attributes.
