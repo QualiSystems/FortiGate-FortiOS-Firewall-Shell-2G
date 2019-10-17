@@ -6,7 +6,7 @@ Release date: October 2019
 
 Shell version: 1.1.0
 
-Document version: 1.1.0
+Document version: 1.1
 
 # In This Guide
 
@@ -43,6 +43,8 @@ For detailed information about the shell’s structure and attributes, see the [
 Release: **FortiGate FortiOS Firewall 2G Shell**
 
 * CloudShell version: 8.3 and above
+
+**Note:** If your CloudShell version does not support this shell, you should consider upgrading to a later version of CloudShell or contact customer support.
 
 ### Data Model
 
@@ -162,7 +164,7 @@ In online mode, the execution server automatically downloads and extracts the ap
 # Typical Workflows 
 
 **Workflow 1 - _Save configuration_** 
-1. In CloudShell Portal, add the device resource to an active sandbox.
+1. In CloudShell Portal, add the **FortiGate FortiOS Firewall** resource to your blueprint and reserve the blueprint.
 
 2. Run the **Save** command on the device with the following inputs:
     * **Folder Path**: For example, *tftp://ipaddress/shared folder* 
@@ -171,7 +173,7 @@ In online mode, the execution server automatically downloads and extracts the ap
 The configuration is saved to a file named *<ResourceName><startup/running-config>-<timestamp>*, which will reside in the folder path you entered.    
 
 **Workflow 2 - _Restore Configuration_**
-1. In CloudShell Portal, reserve the device resource.
+1. In CloudShell Portal, add the **FortiGate FortiOS Firewall** resource to your blueprint and reserve the blueprint.
 
 2. Run the **Restore** resource command.
 
@@ -181,7 +183,7 @@ The configuration is saved to a file named *<ResourceName><startup/running-confi
     * **Configuration Type** (mandatory): **Startup** or **Running**. 
 	
 **Workflow 3 - _Load firmware_**
-1. In CloudShell Portal, reserve the device resource.
+1. In CloudShell Portal, add the **FortiGate FortiOS Firewall** resource to your blueprint and reserve the blueprint.
 
 2. Run the **Load Firmware** resource command.
 
@@ -189,7 +191,7 @@ The configuration is saved to a file named *<ResourceName><startup/running-confi
     * **Path** (mandatory): Enter the full path of the firmware file on the remote host. For example, *tftp://10.1.1.1/PanOS_200-5.0.5*. 
 
 **Workflow 4 - _Send custom command_**
-1. In CloudShell Portal, reserve the device resource.
+1. In CloudShell Portal, add the **FortiGate FortiOS Firewall** resource to your blueprint and reserve the blueprint.
 
 2. Run the **Send Custom Command** resource command.
 
