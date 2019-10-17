@@ -2,11 +2,11 @@
 
 # **FortiGate FortiOS Firewall 2G Shell**
 
-Release date: October 2018
+Release date: October 2019
 
-Shell version: 1.0.0
+Shell version: 1.1.0
 
-Document version: 1.0
+Document version: 1.1
 
 # In This Guide
 
@@ -31,7 +31,7 @@ CloudShell's Firewall shells enable you to manage your Firewall device similar t
 For more information on the **FortiGate FortiOS Firewall**, see the official **FortiNet** product documentation.
 
 ### Standard version
-The **FortiGate FortiOS Firewall 2G Shell 1.0.0** is based on the **CloudShell Firewall Standard 3.0.1**.
+The **FortiGate FortiOS Firewall 2G Shell 1.1.0** is based on the **CloudShell Firewall Standard 3.0.1**.
 
 For detailed information about the shell’s structure and attributes, see the [**Firewall Shell Standard**](https://github.com/QualiSystems/cloudshell-standards/blob/master/Documentation/firewall_standard.md) in GitHub.
 
@@ -81,10 +81,10 @@ The shell comprises:
 |File name|Description|
 |:---|:---|
 |FortiGateFortiOSFirewallShell2G.zip|FortiGate shell package|
-|cloudshell-firewall-fortinet-fortios-shell-2g-dependencies-package-1.0.0.zip|Shell Python dependencies (for offline deployments only)|
+|cloudshell-firewall-fortinet-fortios-shell-2g-dependencies-package-1.1.0.zip|Shell Python dependencies (for offline deployments only)|
 
 # Importing and Configuring the Shell
-This section describes how to import the **FortiGate FortiOS Firewall 2G Shell 2G 1.0.0** and configure and modify the shell’s devices.
+This section describes how to import the **FortiGate FortiOS Firewall 2G Shell 2G 1.1.0** and configure and modify the shell’s devices.
 
 ### Importing the shell into CloudShell
 
