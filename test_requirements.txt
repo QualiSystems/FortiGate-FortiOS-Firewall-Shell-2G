@@ -1,4 +1,0 @@
-nose
-coverage
-mock
-jsonpickle
