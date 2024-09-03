@@ -169,12 +169,12 @@ jobs:
           TOXENV: pack
         run: tox
       - name: Get Linux dependencies
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: linux-dependencies
           path: linux-dependencies
       - name: Get Windows dependencies
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: windows-dependencies
           path: windows-dependencies
